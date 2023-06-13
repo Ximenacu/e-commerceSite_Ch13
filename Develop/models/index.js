@@ -11,10 +11,11 @@ Product.belongsTo(Category, {
 
 // // -----------Categories have many Products
 
-// Category.hasMany(Product, {
-//   foreignKey: 'category_id',
-//   onDelete: 'CASCADE'
-// });
+
+Category.hasMany(Product, {
+  foreignKey: 'category_id',
+  onDelete: 'CASCADE'
+});
 
 // --------------Products belongToMany Tags (through ProductTag)
 // Product.belongsToMany(ProductTag, {
