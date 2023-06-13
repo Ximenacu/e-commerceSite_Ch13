@@ -18,4 +18,4 @@ sequelize.sync().then(() => {
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);
 });
-}).catch(console.log("Error with sequelize link"));
+}).catch(() => console.log("Error with sequelize link"));
